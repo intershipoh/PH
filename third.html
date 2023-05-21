@@ -25,18 +25,21 @@
     }
 
     .container-frame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(30px);
-    border: 2px solid rgb(245, 242, 242);
-    width: 30vw;
-    height: 130vh;
-    margin-top: 100px; 
-    padding: 20px;
-  }
-   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(30px);
+      border: 2px solid rgb(245, 242, 242);
+      width: 30vw;
+      height: 130vh;
+      margin-top:200px;
+      padding:20px;
+      
+      
+      
+    }
+
     .container {
       padding: 0px;
     }
@@ -70,6 +73,7 @@
     }
 
 
+
     #background-image {
   position: fixed;
   top: 0;
@@ -79,111 +83,110 @@
   object-fit: cover;
   z-index: -1;
 }
-    #name {
+#name {
      
-      color: aliceblue;
+     color: aliceblue;
 
-    }
-    #name1{
-      
-     color: black;
-    }
+   }
+   #name1{
+     
+    color: black;
+   }
 
-    #mobile {
-      color: aliceblue;
-    }
+   #mobile {
+     color: aliceblue;
+   }
 
-    #reviewc {
-      color: aliceblue;
-    }
-    #rating{
-      color: aliceblue;
-    }
+   #reviewc {
+     color: aliceblue;
+   }
+   #rating{
+     color: aliceblue;
+   }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      margin: 20px;
-      padding: 20px;
-    }
-    
+   form {
+     display: flex;
+     flex-direction: column;
+     margin: 20px;
+     padding: 20px;
+   }
+   
 
-    .hi {
-  background-color: aliceblue;
-  color: black;
-  font-size: 28px;
-  padding: 3px;
-  border: 2px solid black;
-  border-radius: 5px;
-  text-align: center;
-  
+   .hi {
+ background-color: aliceblue;
+ color: black;
+ font-size: 20px;
+ padding: 3px;
+ border: 2px solid black;
+ border-radius: 5px;
+ text-align: center;
+ 
 }
 
 button {
-  font-family: inherit;
-  font-size: 20px;
-  background: dodgerblue;
-  color: white;
-  padding: 0.7em 1em;
-  padding-left: 0.9em;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.2s;
-  
+ font-family: inherit;
+ font-size: 20px;
+ background: dodgerblue;
+ color: white;
+ padding: 0.7em 1em;
+ padding-left: 0.9em;
+ display: flex;
+ align-items: center;
+ border: none;
+ border-radius: 16px;
+ overflow: hidden;
+ transition: all 0.2s;
+ 
 }
 
 button span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
+ display: block;
+ margin-left: 0.3em;
+ transition: all 0.3s ease-in-out;
 }
 
 button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
+ display: block;
+ transform-origin: center center;
+ transition: transform 0.3s ease-in-out;
 }
 
 button:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
+ animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
 button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+ transform: translateX(1.2em) rotate(45deg) scale(1.1);
 }
 
 button:hover span {
-  transform: translateX(5em);
+ transform: translateX(5em);
 }
 
 button:active {
-  transform: scale(0.95);
+ transform: scale(0.95);
 }
 
 @keyframes fly-1 {
-  from {
-    transform: translateY(0.1em);
-  }
+ from {
+   transform: translateY(0.1em);
+ }
 
-  to {
-    transform: translateY(-0.1em);
-  }
+ to {
+   transform: translateY(-0.1em);
+ }
 }
 
 textarea, input[type="text"] {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ padding: 10px;
+ width: 100%;
+ box-sizing: border-box;
 }
 
 </style>
 </head>
-
 <body>
   <body>
     <img id="background-image" src="assets/bgcircle.jpg" alt="Background Image">
@@ -205,24 +208,19 @@ textarea, input[type="text"] {
                 </div>
                
                 <div class="form-group">
-                  <label for="review" id="reviewc">Review:</label>
+                  <label for="review" id="reviewc">Review :</label>
                   <br>
-                  <textarea id="Review" style="height: 90px; border-radius: 5px; padding: 10px;"></textarea>
-                </div>
-                
-                <div class="form-group">
-                  <p style="color: aliceblue">Code is:</p>
-                  <span id="code" class="hi"></span>
-                </div>
-                
-                <div class="form-group">
-                  <p style="color: aliceblue">Ratings:</p>
-                  <div id="ratings" class="hi"></div>
-                </div>
-                
-                <div class="form-group text-center">
+                  <textarea id="Review" style="height: 60px; border-radius: 5px; padding: 10px;"></textarea>
 
-                  <center><button type="button" class="button" onclick="share()">
+                </div>
+                  
+                    <p style="color: aliceblue">code is : </p>
+                    <span id="code" class="hi" ></span>
+                    <br>
+                    <p style="color:aliceblue">Ratings:</p>
+                      <div id="ratings" class="hi"></div>
+                </div>
+                <button type="button" class="button" style="column-span: 10px;" onclick="share()">
                     <div class="svg-wrapper-1">
                       <div class="svg-wrapper">
                         <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -233,67 +231,68 @@ textarea, input[type="text"] {
                     </div>
                     <span>Send</span>
                   </button>
-                </div></center>
-                
+                  
+                  
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-  <script>
-    // Retrieve image data from sessionStorage and display the image
-window.onload = function() {
-    const imageData = sessionStorage.getItem('imageData');
-    const imgElement = document.getElementById('image');
-    imgElement.src = imageData;
-    let Review = document.getElementById('Review');
-    let savedReview = sessionStorage.getItem('Review');
-    if (savedReview) {
-        Review.innerHTML = savedReview;
-    }
-}
-
-function share() {
-		let code = sessionStorage.getItem("code");
-		let shareUrl = "https://omcodes23.github.io/Internship/" + code;
-		navigator.share({
-			title: "Check out this image and Review!",
-			text: "I found this image and Review and wanted to share it with you.",
-			url: shareUrl,
-		})
-			.then(() => console.log("Share successful"))
-			.catch((error) => console.log("Share failed:", error));
-	}
   
-function generateCode() {
-		let chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		let code = "";
-
-		for (let i = 0; i < 5; i++) {
-			let randomIndex = Math.floor(Math.random() * chars.length);
-			code += chars.charAt(randomIndex);
-		}
-
-		return code;
-	}
-  let code = generateCode();
-	sessionStorage.setItem("code", code);
-	document.getElementById("code").innerHTML = code;
-
-  document.addEventListener("DOMContentLoaded", function() {
-      var rating = localStorage.getItem("rating");
-      if (rating) {
-        var ratingsDiv = document.getElementById("ratings");
-        ratingsDiv.innerHTML = "You rated: " + rating + " stars.";
-        localStorage.removeItem("rating");
-      } else {
-        var ratingsDiv = document.getElementById("ratings");
-        ratingsDiv.innerHTML = "No ratings yet.";
+    <script>
+      // Retrieve image data from sessionStorage and display the image
+  window.onload = function() {
+      const imageData = sessionStorage.getItem('imageData');
+      const imgElement = document.getElementById('image');
+      imgElement.src = imageData;
+      let Review = document.getElementById('Review');
+      let savedReview = sessionStorage.getItem('Review');
+      if (savedReview) {
+          Review.innerHTML = savedReview;
       }
-    });
-
-  </script>
-</body>
-</html>
+  }
+  
+  function share() {
+      let code = sessionStorage.getItem("code");
+      let shareUrl = "https://omcodes23.github.io/Internship/" + code;
+      navigator.share({
+        title: "Check out this image and Review!",
+        text: "I found this image and Review and wanted to share it with you.",
+        url: shareUrl,
+      })
+        .then(() => console.log("Share successful"))
+        .catch((error) => console.log("Share failed:", error));
+    }
+    
+  function generateCode() {
+      let chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let code = "";
+  
+      for (let i = 0; i < 5; i++) {
+        let randomIndex = Math.floor(Math.random() * chars.length);
+        code += chars.charAt(randomIndex);
+      }
+  
+      return code;
+    }
+    let code = generateCode();
+    sessionStorage.setItem("code", code);
+    document.getElementById("code").innerHTML = code;
+  
+    document.addEventListener("DOMContentLoaded", function() {
+        var rating = localStorage.getItem("rating");
+        if (rating) {
+          var ratingsDiv = document.getElementById("ratings");
+          ratingsDiv.innerHTML = "You rated: " + rating + " stars.";
+          localStorage.removeItem("rating");
+        } else {
+          var ratingsDiv = document.getElementById("ratings");
+          ratingsDiv.innerHTML = "No ratings yet.";
+        }
+      });
+  
+    </script>
+  </body>
+  </html>
+  
